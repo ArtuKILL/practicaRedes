@@ -1,0 +1,8 @@
+Options NoExecCGI
+AddType text/x-server-parsed-html .html
+AddType text/x-server-parsed-html .htm
+AuthName "Sicheres Verzeichnis"
+AuthType basic
+AuthUserFile .\html\secure\.htpasswd
+require valid-user
+default index
